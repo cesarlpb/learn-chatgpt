@@ -13,8 +13,11 @@ function App() {
         body: JSON.stringify({ prompt: prompt }),
       };
 
-      const response = await fetch('/api/get_response', requestOptions);
+      // Cambiar endpoint al pasar a prod u otro entorno que no sea localhost:
+      const response = await fetch('http://127.0.0.1:5000/api/get_response', requestOptions);
       const data = await response.json();
+
+      console.log(data)
 
       if (data.response) {
         setResponse(data.response);
