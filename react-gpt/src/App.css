@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+input {
+  display: inline-block; /* Hace que el campo de entrada sea un bloque en línea */
+  margin-right: 5px;
+  width: 300px; /* Ancho deseado del campo de entrada */
+  padding: 10px; /* Espaciado interno del campo de entrada */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Borde del campo de entrada */
+  border-radius: 5px; /* Radio de borde del campo de entrada */
+}
+
+input:focus {
+  outline: none; /* Elimina el contorno al enfocar el campo de entrada */
+  border-color: #3090f7; /* Cambia el color del borde al enfocar el campo */
+}
